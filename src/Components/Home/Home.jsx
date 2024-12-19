@@ -35,7 +35,7 @@ export default function Home() {
   const{theme} = useContext(Theme)
   return (
     <>
-    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"}  ` }>
+    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} h-screen ` }>
 
         <div className="grid sm:grid-cols-2 items-center grid-cols-1">
 
