@@ -54,7 +54,7 @@ export default function Home() {
 
                 <div>
                   <img 
-                      src="../../../public/Programming-pana (1).svg"
+                      src="./Programming-pana (1).svg"
                       className="w-full mt-4 image-1 drop-shadow-md	"
                       alt="" />
 
