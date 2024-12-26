@@ -35,12 +35,12 @@ export default function Home() {
   const{theme} = useContext(Theme)
   return (
     <>
-    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} h-screen ` }>
+    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} md:h-screen ` }>
 
         <div className="grid sm:grid-cols-2 items-center grid-cols-1">
 
 
-                <div className="lg:ml-24 md:-mt-48 sm:ml-1 ml-12 mt-12 name">
+                <div className="lg:ml-24 md:-mt-48 sm:ml-1 ml-12 mt-12 name z-0">
 
                   <p className="md:text-[60px] sm:text-[42px] text-[32px] p uppercase  ">tikone</p>
                   <p className="md:text-[82px] sm:text-[60px] text-[40px] p uppercase text-[#FF6500] font-semibold block sm:-mt-10 -mt-5">samadhan</p>

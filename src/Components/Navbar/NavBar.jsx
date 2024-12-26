@@ -7,33 +7,33 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
-import { useGSAP } from "@gsap/react"
-import gsap from "gsap"
+// import { useGSAP } from "@gsap/react"
+// import gsap from "gsap"
 
 export default function NavBar() {
 
 
-  useGSAP(()=>{
+  // useGSAP(()=>{
 
-    gsap.from(".link",{
-      y:-200,
-      stagger: 0.1,
+  //   gsap.from(".link",{
+  //     y:-200,
+  //     stagger: 0.1,
   
-    }
+  //   }
 
-    )
-  })
-  useGSAP(()=>{
+  //   )
+  // })
+  // useGSAP(()=>{
 
-    gsap.from(".nav",{
-      y:-200,
-      zIndex:100,
+  //   gsap.from(".nav",{
+  //     y:-200,
+  //     zIndex:100,
     
      
-    }
+  //   }
 
-    )
-  })
+  //   )
+  // })
 
 
 
@@ -72,12 +72,12 @@ function toggleClose (){
 
 
   return (
-    <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex justify-around p-6 nav`}>
-      <ul className={` ${  menuIsOpen   ? `flex-col absolute w-full z-10 gap-6 text-center top-20 p-12  ${ theme ?  "bg-green-500 opacity-100": " bg-[#222831]" } ` :"hidden " }  flex sm:flex sm:justify-around  sm:flex-row items-center  sm:w-[50%] md:w-[40%]  uppercase font-semibold `}>
-        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Home</NavLink>
-        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :`${ theme ? " text-white" : "  text-[#222831]"} link `}>About</NavLink>
-        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Contact</NavLink>    
-        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Resume</NavLink>
+    <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex justify-around p-6 nav relative `}>
+      <ul className={` ${  menuIsOpen   ? `flex-col absolute w-full z-10 gap-6 text-center top-20 p-12  ${ theme ?  "bg-white opacity-100": " bg-[#222831]" } ` :"hidden " }  flex sm:flex sm:justify-around  sm:flex-row items-center  sm:w-[50%] md:w-[40%]  uppercase font-semibold `}>
+        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "   text-white"} link`}>Home</NavLink>
+        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :`${ theme ? " text-[#222831]" : "  text-white"} link `}>About</NavLink>
+        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "  text-white"} link`}>Contact</NavLink>    
+        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "  text-white"} link`}>Resume</NavLink>
 
        
       </ul>
