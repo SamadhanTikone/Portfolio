@@ -16,6 +16,7 @@ import Contact from "./Components/Contact/Contact"
 import Layout from "./Components/OUtlet/Layout"
 import Resume from "./Components/Resume/Resume"
 import Portfolio from "./Components/Portfolio/Portfolio"
+import Error from "./Components/Error/Error"
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
     {
       path:"/",
       element:<Layout/>,
+      errorElement:<Error/>,
       children:[
         {
           path:"",
@@ -79,7 +81,6 @@ function App() {
   <ThemeContext>
   <RouterProvider router={router} />
   </ThemeContext>
-  
   </>
   )
 }
