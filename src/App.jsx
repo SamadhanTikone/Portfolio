@@ -53,20 +53,20 @@ function App() {
         
         },
         {
-          path:"/about",
+          path:"about",
           element:<About/>
         
         },
         {
-          path:"/contact",
+          path:"contact",
           element:<Contact/>
         },
         {
-          path:"/resume",
+          path:"resume",
           element:<Resume/>
         },
         {
-          path:"/portfolio",
+          path:"portfolio",
           element:<Portfolio/>
         }
       ]
