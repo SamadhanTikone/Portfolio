@@ -16,7 +16,6 @@ export default function ThemeContext({children}) {
 
        {children}
 
-
     </Theme.Provider>
 
   )

@@ -1,4 +1,4 @@
-import {  NavLink,  } from "react-router-dom"
+import {  NavLink, useNavigate,  } from "react-router-dom"
 import Button from '@mui/material/Button';
 import { useContext, useState } from "react";
 import { Theme } from "../Context/Context";
@@ -40,7 +40,11 @@ export default function NavBar() {
     const{theme , setTheme} = useContext(Theme);
     const[menuIsOpen , setMenuIsOpen] = useState(false)
     const[close , setClose] = useState(false)
-    
+    const navigate = useNavigate();
+
+    const handleConnect =()=>{
+      navigate("/contact")
+    }
 
 function toggleTheme (){
 
@@ -74,10 +78,12 @@ function toggleClose (){
   return (
     <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex justify-around p-6 nav relative `}>
       <ul className={` ${  menuIsOpen   ? `flex-col absolute w-full z-10 gap-6 text-center top-20 p-12  ${ theme ?  "bg-white opacity-100": " bg-[#222831]" } ` :"hidden " }  flex sm:flex sm:justify-around  sm:flex-row items-center  sm:w-[50%] md:w-[40%]  uppercase font-semibold `}>
-        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "   text-white"} link`}>Home</NavLink>
-        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :`${ theme ? " text-[#222831]" : "  text-white"} link `}>About</NavLink>
-        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "  text-white"} link`}>Contact</NavLink>    
-        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "  text-white"} link`}>Resume</NavLink>
+        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? "text-white " : "   text-[#222831]"} link`}>Home</NavLink>
+        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :`${ theme ? " text-white" : "text-[#222831]  "} link `}>About</NavLink>
+        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Resume</NavLink>
+        <NavLink to={"/portfolio"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Portfolio</NavLink>
+        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-white" : "  text-[#222831]"} link`}>Connect</NavLink>    
+
 
        
       </ul>
@@ -86,7 +92,7 @@ function toggleClose (){
         </div>
 
 <div className="flex justify-between md:w-[30%] lg:w-[15%]  sm:w-[40%]  w-auto">
-<Button variant="outlined" sx={{color:"#FF6500", borderColor:"#FF6500"}}>Contact US</Button>
+<Button variant="outlined" sx={{color:"#FF6500", borderColor:"#FF6500"}} onClick={handleConnect}> Let&apos;s Connect</Button>
 <Button 
             variant="outlined"
             sx={{color:"#FF6500", borderColor:"#FF6500"}} 

@@ -14,7 +14,9 @@ import Home from "./Components/Home/Home"
 import About from "./Components/About/About"
 import Contact from "./Components/Contact/Contact"
 import Layout from "./Components/OUtlet/Layout"
-import Portfolio from "./Components/Resume/Portfolio"
+import Resume from "./Components/Resume/Resume"
+import Portfolio from "./Components/Portfolio/Portfolio"
+
 
 function App() {
 
@@ -59,6 +61,10 @@ function App() {
         },
         {
           path:"/resume",
+          element:<Resume/>
+        },
+        {
+          path:"/portfolio",
           element:<Portfolio/>
         }
       ]
@@ -71,8 +77,6 @@ function App() {
   <>
   
   <ThemeContext>
-
-
   <RouterProvider router={router} />
   </ThemeContext>
   

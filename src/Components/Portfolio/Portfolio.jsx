@@ -3,7 +3,8 @@
 export default function Portfolio() {
   return (
     <div>
-      Resume
+      Portfolio
     </div>
   )
 }
+
