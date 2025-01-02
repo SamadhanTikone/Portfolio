@@ -56,11 +56,11 @@ export default function About() {
     <div className={`px-24 h-full ${theme ? "bg-[#222831] text-white" : "bg-white text-black"}`}>
       
       <div>
-        <h2 className="text-3xl div uppercase font-semibold py-12 underline text-center">About me </h2>
+        <h2 className="text-3xl div uppercase font-semibold py-12 underline text-center">About <span className='text-[#FF6500]'>me</span> </h2> 
        <div className="flex ">
 
        <p className="text-[22px] div mx-6  leading-loose w-[50%]">
-       I am currently in my final year of B.Tech in Computer Science and Engineering, where I have developed a strong understanding of a wide range of programming languages, frameworks, and technologies. I am proficient in both front-end and back-end development, with expertise in HTML5, CSS3, Bootstrap, Tailwind, JavaScript, React, Redux, and React Hooks to build dynamic and responsive web applications. </p>
+       I am currently in my final year of B.Tech in Computer Science and Engineering, where I have developed a strong understanding of a wide range of programming languages, frameworks, and technologies. I am proficient in both front-end and back-end development, with expertise in <span className='text-[#FF6500]'>HTML5, CSS3, Bootstrap, Tailwind, JavaScript, React, Redux, and React Hooks</span> to build dynamic and responsive web applications. </p>
 
        <img src="./final year.webp" alt="" className="w-[450px] div mb-4" />
 
@@ -69,13 +69,13 @@ export default function About() {
 <div className="flex">
   <img src="./men.jpeg" alt="" className="w-[450px] mb-12 -mt-12  div1"/>
 <p className="text-[22px] mx-6 leading-loose float-right w-[50%]  div1 ">
-On the back-end, I have hands-on experience with Core Java, Advanced Java technologies (Servlets, JDBC, JSP), and frameworks like Hibernate, Spring, and Spring Boot. I am skilled in working with MySQL and other database technologies, and I have built scalable, secure server-side applications. I have also worked with modern web development tools like RESTful APIs, JSON, and AJAX for seamless user interactions and GSAP for high-performance animations.
+On the back-end, I have hands-on experience with Core Java, Advanced Java technologies (Servlets, JDBC, JSP), and frameworks like <span className='text-[#FF6500]'>Maven, Hibernate, MicroServices, Spring, and Spring Boot</span>. I am skilled in working with MySQL and other database technologies, and I have built scalable, secure server-side applications. I have also worked with modern web development tools like <span className='text-[#FF6500]'>RESTful APIs, JSON, and AJAX</span> for seamless user interactions and GSAP for high-performance animations.
 </p>
 </div>
 
 <div className="flex">
 <p className="text-[22px] mx-6 leading-loose  w-[50%] mt-4  div1">
-Throughout my academic journey, I have applied these technologies to create practical solutions and innovative projects. I am passionate about learning and applying new technologies, and I continue to seek opportunities to grow as a developer and contribute meaningfully to the field of software engineering.
+Throughout my academic journey, I have applied these technologies <span className='text-[#FF6500]'>to create practical solutions and innovative projects</span>. I am passionate about learning and applying new technologies, and I continue to seek opportunities to grow as a developer and contribute meaningfully to the field of software engineering.
 </p>
 <img src="./art.jpeg" alt="" className="w-[450px] mb-4 -mt-12  div1"/>
 </div>

@@ -6,16 +6,25 @@
 // import XIcon from '@mui/icons-material/X';
 import { useGSAP } from "@gsap/react";
 import styles from "./Contact.module.css"
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 
 import gsap from "gsap";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Theme } from "../Context/Context";
 
 
 
 export default function Contact() {
 
+  const [name , setName] = useState(null);
+  const [isSubmit , setIsSubmit] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    setIsSubmit(true);  // Set form submission state
+  };
+  console.log(name);
+  
   useGSAP(() => {
 
     gsap.from(".animate", {
@@ -31,79 +40,102 @@ export default function Contact() {
 
   const {theme} = useContext(Theme);
   return (
+ <>
+   {
+    isSubmit ? 
+    
+            <p className="my-24 p-8 text-xl text-center">✅{name}, Thanks for Connecting me.</p>
+     :
+    
     <div className={`${theme? "bg-[#222831] text-white" : "bg-white text-black"}`}>
 
-      <h2 className="text-center text-3xl font-semibold pt-8"> Let&apos;s Connect</h2>
+    <h2 className="text-center text-3xl font-semibold pt-8"> Let&apos;s Connect</h2>
 
-      <div className="flex  flex-col j" >
+    <div className="flex  flex-col j" >
 
 
-        {/* <div className="flex  justify-around items-center w-[60%]">
-      <img src="./Social media-bro.svg" alt="" className="w-[350px] " /> 
+      {/* <div className="flex  justify-around items-center w-[60%]">
+    <img src="./Social media-bro.svg" alt="" className="w-[350px] " /> 
 
-    
-    
-     <div className="flex flex-col gap-4  justify-center ">
+  
+  
+   <div className="flex flex-col gap-4  justify-center ">
 
 <p className="hover:scale-150 transition-all duration-25 scale-125">   <Link> <LinkedInIcon/> LinkedIn </Link></p>
-   <p className="hover:scale-150 transition-all duration-25 scale-125">
-   <Link> <InstagramIcon/> Instagram</Link>
-   </p>
-    <p className="hover:scale-150 transition-all duration-25 scale-125">
-    <Link> <GitHubIcon/> GitHub </Link>
-    </p>
-    
-    <p className="hover:scale-150 transition-all duration-25 scale-125">
-    <Link> <XIcon/> Twitter</Link>
-    </p>
+ <p className="hover:scale-150 transition-all duration-25 scale-125">
+ <Link> <InstagramIcon/> Instagram</Link>
+ </p>
+  <p className="hover:scale-150 transition-all duration-25 scale-125">
+  <Link> <GitHubIcon/> GitHub </Link>
+  </p>
+  
+  <p className="hover:scale-150 transition-all duration-25 scale-125">
+  <Link> <XIcon/> Twitter</Link>
+  </p>
 
-   </div>
+ </div>
 
-     
-      </div> */}
+   
+    </div> */}
 
-        <div className={`border m-12 rounded-lg flex ${styles.div}`}>
-          <img src="./Contact us-rafiki (1).svg" alt="" className="w-[45%] animate" />
-          <form action="" className="w-[40%] border border-[#FF6500] animate p-6 m-10 rounded-lg">
-
-            <h2 className="text-3xl font-semibold text-center my-4 underline"> Contact Me</h2>
-
-            <div className="flex w-[100%] gap-4">
+      <div className={`border md:m-12 m-2 rounded-lg flex md:flex-row flex-col ${styles.div}`}>
+        <img src="./Contact us-rafiki (1).svg" alt="" className="md:w-[45%] animate" />
 
 
-              <div className="flex flex-col w-[50%]">
-                <label className="" htmlFor="Fname">First Name:</label>
-                <input type="text" id="Fname" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} />
-              </div>
-              <div>
-                <label htmlFor="Lname">Last Name:</label>
-                <input type="text" id="Lname" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`}  />
-              </div>
+        <form 
+              action="" 
+              className="md:w-[40%] border border-[#FF6500] animate p-2 md:p-6 md:m-10 m-2 rounded-lg md:text-[18px] text-[16px]"
+              onSubmit={handleSubmit}
+              >
+
+          <h2 className="md:text-3xl text-2xl font-semibold text-center my-4 underline"> Contact Me</h2>
+
+          <div className="flex md:flex-row w-[100%] md:gap-4 flex-col">
+
+
+            <div className="flex flex-col md:w-[50%]">
+              <label className="" htmlFor="Fname">First Name:</label>
+              <input 
+                    type="text"
+                    id="Fname" 
+                    className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`}
+                    onChange={(e)=>setName(e.target.value)}
+                    required
+                    />
             </div>
-
-
             <div>
-              <label htmlFor="email">Email:</label>
-              <input type="email" id="email" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`}/>
+              <label htmlFor="Lname">Last Name:</label>
+              <input type="text" id="Lname" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} required />
             </div>
+          </div>
 
-            <div>
-              <label htmlFor="mobile">Mobile No:</label>
-              <input type="number" id="mobile" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} />
-            </div>
 
-            <div className="flex flex-col">
-              <label htmlFor="description">Description:</label>
-              <textarea name="description" id="description" rows={8} className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} ></textarea>
-            </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input type="email" id="email" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} required/>
+          </div>
 
-            <Button variant="contained" sx={{ bgcolor: "#FF6500" }}>Submit</Button>
+          <div>
+            <label htmlFor="mobile">Mobile No:</label>
+            <input type="number" id="mobile" className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"} py-1`} required/>
+          </div>
 
-          </form>
-        </div>
+          <div className="flex flex-col">
+            <label htmlFor="description">Description:</label>
+            <textarea name="description" id="description" rows={8} className={ `${theme ? "bg-gray-300 text-black" : "bg-[#222831] text-white"}`} ></textarea>
+          </div>
 
+          {/* <Button variant="contained" sx={{ bgcolor: "#FF6500" }}>Submit</Button> */}
+          <button className="bg-[#FF6500] px-6  py-2 m-auto hover:bg-blue-500  rounded-lg transition-all duration-200 uppercase">Submit</button>
+
+
+        </form>
       </div>
 
     </div>
+
+  </div>
+   }
+ </>
   )
 }
