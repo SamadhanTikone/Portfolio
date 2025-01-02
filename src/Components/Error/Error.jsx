@@ -18,7 +18,7 @@ export default function Error() {
         <Button variant="contained" onClick={handleNavigate} sx={{bgcolor:"#FF6500"}}>Go Back To Home</Button>
         </p>
 
-    <img src="./404 error lost in space-pana.svg" alt="" className="w-[70%] " />
+    <img src="./404-space.svg" alt="" className="w-[70%]" />
     </div>
 
 
