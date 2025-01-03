@@ -59,8 +59,8 @@ export default function Home() {
                   <p className="md:text-[82px] sm:text-[60px] text-[40px] p uppercase text-[#FF6500] font-semibold block sm:-mt-10 -mt-5">samadhan</p>
                   <p className="md:tracking-[15px] tracking-[6px] ml-2 sm:text-[16px] text-[10px] p uppercase font-semibold sm:-mt-4" >Front-End Developer</p>
                   <div className="p">
-                  <Button variant="outlined" sx={{margin:"8px 8px ",color:"#FF6500", borderColor:"#FF6500"}} onClick={handleResume}>Resume </Button>
-                  <Button variant="outlined" sx={{margin:"8px 8px",color:"#FF6500", borderColor:"#FF6500"}} onClick={handlePortfolio}>Portfolio </Button>
+                  <Button variant="outlined" sx={{margin:"8px 8px ",color:"#FF6500", borderColor:"#FF6500"}} onClick={handleResume} className="p">Resume </Button>
+                  <Button variant="outlined" sx={{margin:"8px 8px",color:"#FF6500", borderColor:"#FF6500"}} onClick={handlePortfolio} className="p">Portfolio </Button>
                   </div>
                 </div>
 

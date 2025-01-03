@@ -3,9 +3,8 @@
 }
 
 .card:hover .intro{
-    height: 350px;
-   
-    
+    height: 330px;
+
 }
 
 .card:hover img{
@@ -26,3 +25,9 @@
     opacity: 0;
 }
 
+@media screen and (max-width:450px){
+    .card:hover .intro{
+        height: 95%;
+    
+    }
+}
