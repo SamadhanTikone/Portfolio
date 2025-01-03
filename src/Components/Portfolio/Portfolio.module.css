@@ -1,0 +1,28 @@
+.card:hover p{
+    opacity: 1;
+}
+
+.card:hover .intro{
+    height: 350px;
+   
+    
+}
+
+.card:hover img{
+    scale: 1.1;
+}
+.card{
+    transition: all;
+    transition-duration: 0.7s;
+}
+
+.intro{
+    transition: all;
+    transition-duration: 0.7s;
+    padding: 10px 5px;
+}
+
+.intro p{
+    opacity: 0;
+}
+

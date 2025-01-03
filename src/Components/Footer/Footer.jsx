@@ -20,8 +20,8 @@ export default function Footer() {
       
       <div className="md:w-[60%]">
 
-<h2 className="font-semibold text-3xl mb-4">Tikone Samadhan</h2>
-<p className="text-lg">A passionate computer science student skilled in Java, MySQL, web development, and GitHub. Driven by innovation, constantly exploring technology to create impactful solutions.</p>
+<h2 className="font-semibold md:text-3xl text-xl mb-4">Tikone Samadhan</h2>
+<p className="md:text-lg text-sm ">A passionate computer science student skilled in Java, MySQL, web development, and GitHub. Driven by innovation, constantly exploring technology to create impactful solutions.</p>
 
 
       </div>
@@ -36,7 +36,7 @@ export default function Footer() {
    
     </div>
   
-  <p className="text-center mt-8">All Copyrights © {year} Tikone Samadhan</p>
+  <p className="text-center text-sm md:text-md mt-8">All Copyrights © {year} Tikone Samadhan</p>
 
   </div>
   )
