@@ -68,7 +68,7 @@ export default function Home() {
                 <div>
                   <img 
                       src="./Programming-pana (1).svg"
-                      className="w-full mt-4 image-1 	shadow-2xl"
+                      className="w-full mt-4 image-1 "
                       alt="" />
 
                 </div>

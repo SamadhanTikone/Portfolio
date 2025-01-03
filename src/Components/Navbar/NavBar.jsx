@@ -77,12 +77,12 @@ function toggleClose (){
 
   return (
     <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex justify-around p-6 nav relative `}>
-      <ul className={` ${  menuIsOpen   ? `flex-col absolute w-full z-10 gap-6 text-center top-20 p-12  ${ theme ?  "bg-white opacity-100": " bg-[#222831]" } ` :"hidden " }  flex sm:flex sm:justify-around  sm:flex-row items-center  sm:w-[50%] md:w-[40%]  uppercase font-semibold `}>
-        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "   text-white"} link`}>Home</NavLink>
-        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :`${ theme ? "  text-[#222831]" : "text-white  "} link `}>About</NavLink>
-        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? "  text-[#222831]" : "  text-white"} link`}>Resume</NavLink>
-        <NavLink to={"/portfolio"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? "  text-[#222831]" : "  text-white"} link`}>Portfolio</NavLink>
-        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : `${ theme ? " text-[#222831]" : "  text-white"} link`}>Connect</NavLink>    
+      <ul className={` ${  menuIsOpen   ? `flex-col absolute w-full z-10 gap-6 text-center top-20 p-12  ${ theme ?  "bg-white text-black opacity-100": " bg-[#222831] text-white" } ` :"hidden " }  flex sm:flex sm:justify-around  sm:flex-row items-center  sm:w-[50%] md:w-[40%]  uppercase font-semibold `}>
+        <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Home</NavLink>
+        <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :"null"}>About</NavLink>
+        <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Resume</NavLink>
+        <NavLink to={"/portfolio"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Portfolio</NavLink>
+        <NavLink to={"/contact"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Connect</NavLink>    
 
 
        
