@@ -82,23 +82,23 @@ export default function Contact() {
    
     </div> */}
 
-      <div className={`border md:m-12 m-2 rounded-lg flex justify-center items-center md:flex-row flex-col ${styles.div}`}>
+      <div className={`border md:m-12 m-2 rounded-lg flex justify-center items-center lg:flex-row flex-col ${styles.div}`}>
 
         <img src="./Contact us-rafiki (1).svg" alt="" className="md:w-[45%] animate" />
 
 
         <form 
               action="" 
-              className="md:w-[40%]  border border-[#FF6500] animate p-2 md:p-6 md:m-10 m-2 rounded-lg "
+              className="lg:w-[40%] md:w-[60%] w-[80%] border border-[#FF6500] animate p-2 md:p-6 lg:m-10 m-2 rounded-lg "
               onSubmit={handleSubmit}
               >
 
           <h2 className="md:text-3xl text-2xl font-semibold text-center my-4 underline"> Contact Me</h2>
 
-          <div className="flex md:flex-row w-[100%]  md:gap-4 flex-col">
+          <div className="flex lg:flex-row w-[100%]  md:gap-4 flex-col">
 
 
-            <div className="flex flex-col  md:w-[50%]">
+            <div className="flex flex-col  lg:w-[50%]">
               <label className="" htmlFor="Fname">First Name:</label>
               <input 
                     type="text"
