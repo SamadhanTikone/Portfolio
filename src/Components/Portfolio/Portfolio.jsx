@@ -35,23 +35,23 @@ export default function Portfolio() {
 
 
 
-          <div className={`overflow-hidden cursor-pointer h-60 md:h-auto relative w-full shadow-xl rounded-lg ${styles.card} `}>
+          <div className={`overflow-hidden cursor-pointer h-auto relative w-full shadow-xl rounded-lg ${styles.card} `}>
             <img src="./hotel blue.png" alt="" className=" transition-all duration-700 overflow-hidden" />
 
-            <div className={` md:h-20 h-10 w-full bottom-0 absolute box-border ${styles.intro} bg-black bg-opacity-80 text-white`}>
-              <h2 className="md:text-3xl md:p-4 mx-2 font-bold">Hotel Kings Garden </h2>
-              <button className="bg-red-500 mx-2 px-4 md:py-2 py-1 text-sm rounded-lg my-4"> </button>
+            <div className={`  h-14 md:h-28 w-full -bottom-6  absolute box-border ${styles.intro} bg-black bg-opacity- flex flex-col justify-center items-center text-white`}>
+              <h2 className="md:text-3xl my-8 font-bold shadow-lg">Hotel Kings Garden </h2>
+              <button className="bg-orange-600 mx-2 md:px-4 px-2 text-sm mt-1 md:mt-9 rounded-lg my-4"><InsertLinkIcon/> </button>
             </div>
           </div>
 
           <div className="flex mt-4 md:mt-0 ">
-            <p className="w-2 h-full rounded-lg bg-orange-600 inline-block"> <InsertLinkIcon/> </p>
+            <p className="w-2 h-full rounded-lg bg-orange-600 inline-block">  </p>
             <div className="ml-4 ">
 
             <h2 className="inline text-xl md:text-2xl font-semibold underline">Hotel Kings Garden</h2>
-            <p className="my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id culpa expedita enim natus dicta eius aliquid et molestias velit debitis.</p>
+            <p className="my-2 md:text-lg">Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam rerum nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt excepturi ipsa consequuntur cumque autem aliquid? voluptate, dolorem illo. amet consectetur adipisicing elit. Id culpa expedita enim natus dicta eius aliquid et molestias velit debitis.</p>
 
-            <p>tech:</p>
+            <p className="uppercase">tech:</p>
             </div>
           </div>
 
