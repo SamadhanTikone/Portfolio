@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { Theme } from "../Context/Context"
-import styles from "./Portfolio.module.css"
-import InsertLinkIcon from '@mui/icons-material/InsertLink';
+import Project from "./Project"
+
 
 
 export default function Portfolio() {
@@ -26,40 +26,27 @@ export default function Portfolio() {
           </div>
         </div>
 
-
         <div className="grid md:grid-cols-2 grid-cols-1 mt-8  md:gap-8">
 
+          <Project 
+                  url={"./hotel blue.png"}
+                  title={" Hotel Kings Garden"}
+                  discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                />
 
+          <Project 
+                  url={"./landing page.png"}
+                  title={" Shoes Landing Page"}
+                  discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                />
 
-
-
-
-
-          <div className={`overflow-hidden cursor-pointer h-auto relative w-full shadow-xl rounded-lg ${styles.card} `}>
-            <img src="./hotel blue.png" alt="" className=" transition-all duration-700 overflow-hidden" />
-
-            <div className={`  h-14 md:h-28 w-full -bottom-6  absolute box-border ${styles.intro} bg-black bg-opacity- flex flex-col justify-center items-center text-white`}>
-              <h2 className="md:text-3xl my-8 font-bold shadow-lg">Hotel Kings Garden </h2>
-              <button className="bg-orange-600 mx-2 md:px-4 px-2 text-sm mt-1 md:mt-9 rounded-lg my-4"><InsertLinkIcon/> </button>
-            </div>
-          </div>
-
-          <div className="flex mt-4 md:mt-0 ">
-            <p className="w-2 h-full rounded-lg bg-orange-600 inline-block">  </p>
-            <div className="ml-4 ">
-
-            <h2 className="inline text-xl md:text-2xl font-semibold underline">Hotel Kings Garden</h2>
-            <p className="my-2 md:text-lg">Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam rerum nesciunt Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt excepturi ipsa consequuntur cumque autem aliquid? voluptate, dolorem illo. amet consectetur adipisicing elit. Id culpa expedita enim natus dicta eius aliquid et molestias velit debitis.</p>
-
-            <p className="uppercase">tech:</p>
-            </div>
-          </div>
-
-
-
-
-
+          <Project 
+                  url={"./hotel blue.png"}
+                  title={" Hotel Kings Garden"}
+                  discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                />
         </div>
+
 
       </div>
 
