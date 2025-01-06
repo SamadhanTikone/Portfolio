@@ -31,7 +31,7 @@ export default function Portfolio() {
       <div className="flex flex-col  justify-center items-center md:px-24 md:py-12 p-4">
 
 
-        <div className="flex md:flex-row justify-center items-center flex-col h-[70vh]">
+        <div className="flex md:flex-row justify-center items-center flex-col h-[70%]">
           <img src="./Website Creator-pana.svg" alt="" className="md:w-[50%] img w-full " />
 
           <div className="mx-4 content">
