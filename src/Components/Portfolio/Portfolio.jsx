@@ -44,9 +44,9 @@ export default function Portfolio() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 grid-cols-1 mt-8 gap-2 md:gap-8">
+        <div className="grid md:grid-cols-2 grid-cols-1 mt-8 gap-4 md:gap-8">
 
-          <h2 className="col-span-2 text-3xl font-semibold my-12 text-center mb-8">🚀 Explore My Tech Journey <ArrowDownwardIcon sx={{fontWeight:700 , font:"40px"}}/> </h2>
+          <h2 className="md:col-span-2 col-span-1 text-3xl font-semibold my-12 text-center mb-8">🚀 Explore My Tech Journey <ArrowDownwardIcon sx={{fontWeight:700 , font:"40px"}}/> </h2>
 
           <Project 
                   url={"./hotel blue.png"}

@@ -6,7 +6,7 @@ export default function Project({url , title, discription}) {
   return (
     <>
       
-<div className={`overflow-hidden cursor-pointer h-auto relative w-full image shadow-xl rounded-lg ${styles.card} `}>
+<div className={`overflow-hidden cursor-pointer h-auto relative w-full image shadow-xl rounded-lg ${styles.card}`}>
   <img src={url} alt="" className=" transition-all duration-700 overflow-hidden " />
 
   <div className={`  h-1 md:h-2 w-full -bottom-6  absolute box-border ${styles.intro} bg-black bg-opacity- flex flex-col justify-center items-center text-white`}>
