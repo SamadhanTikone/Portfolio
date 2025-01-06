@@ -1,6 +1,5 @@
 
-import { useContext } from "react";
-import { Theme } from "../Context/Context";
+
 import Links from "./Links";
 
 
@@ -9,12 +8,12 @@ export default function Footer() {
     const data = new Date()
     let year = data.getFullYear();
 
-    const {theme} = useContext(Theme);
+
 
     
   
   return (
-  <div className={`${theme ? "bg-black text-white" : "bg-gray-500 text-black" } md:p-12 p-6`}>
+  <div className={`bg-black text-white md:p-12 p-6`}>
   
   <div className=" flex md:flex-row flex-col justify-around">
       

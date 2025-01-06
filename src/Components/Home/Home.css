@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./Fonts/Faster Stroker.otf') format('truetype'); /* Adjust path based on file location */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sam{
+    font-family: 'MyFont', sans-serif; 
+}
+
 .home{
     background: url("../../../public/Telecommuting-pana (1).svg");
     background-position: center;
@@ -5,7 +16,7 @@
     background-size:cover;
     
 }
-/* 
+
 .image-1{
     animation: float 1s ease-in-out 1s infinite ;
 }
@@ -14,4 +25,15 @@
     0% { transform: translateY(0); }
     50% { transform: translateY(10px); }
     100% { transform: translateY(0); }
-  } */
+  }
+
+  .button {
+    transition: all 0.5s linear;
+    transform: translateY(-10px);
+    padding: 0px;
+    margin: 0px;
+}
+
+.button:hover {
+    transform: translateY(-15px);
+}

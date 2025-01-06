@@ -1,10 +1,17 @@
-.card:hover p{
+.card:hover h2{
     opacity: 1;
 }
 
 .card:hover .intro{
     height: 330px;
 
+}
+
+.card h2{
+
+    opacity: 0;
+    transition: all;
+    transition-duration: 0.5s;
 }
 
 .card:hover img{
@@ -30,4 +37,37 @@
         height: 95%;
     
     }
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear1{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.card {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+.content {
+    animation: appear1 linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
 }
