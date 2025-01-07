@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.main{
+    font-family: "Cousine", serif;
+  font-weight: 400;
+  font-style: normal;
+  
+
+}
+
+.content{
+    border: 5px solid black;
+    padding: 20px;
+    border-radius:8px ;
+    margin-bottom: 10px;
+}
+
+
+h1{
+    font-size: 28px ;
+    font-weight: 700;
+    text-transform: uppercase;
+    
+}
+.variable{
+    color: rgb(83, 83, 230);
+    
+}
+.variableName{
+    color: rgb(47, 175, 47);
+}
+.value{
+    color: rgb(227, 146, 47);
+}
+
+.comment{
+    margin-top: 10px;
+    color: gray;
+}
