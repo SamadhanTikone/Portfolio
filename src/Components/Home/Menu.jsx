@@ -36,7 +36,7 @@ export default function Menu() {
                 <HomeIcon sx={{fontSize:28}}/>
               </ListItemIcon>
              
-              <Link to={"/"} className='text-lg uppercase font-semibold'> Home  </Link>
+              <Link to={"/"} className='ld:text-lg text-md uppercase font-semibold'> Home  </Link>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding sx={{margin:"10px 0px"}}>
@@ -45,7 +45,7 @@ export default function Menu() {
                 <AccountBoxIcon/>
               </ListItemIcon>
              
-              <Link to={"/about"} className='text-lg uppercase font-semibold'> About  </Link>
+              <Link to={"/about"} className='ld:text-lg text-md uppercase font-semibold'> About  </Link>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding sx={{margin:"10px 0px"}}>
@@ -57,7 +57,7 @@ export default function Menu() {
                 
              
              
-              <Link to={"/resume"} className='text-lg uppercase font-semibold'> Resume  </Link>
+              <Link to={"/resume"} className='ld:text-lg text-md uppercase font-semibold'> Resume  </Link>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding sx={{margin:"10px 0px"}}>
@@ -66,7 +66,7 @@ export default function Menu() {
                 <BadgeIcon/>
               </ListItemIcon>
              
-              <Link to={"/portfolio"} className='text-lg uppercase font-semibold'> Portfolio  </Link>
+              <Link to={"/portfolio"} className='ld:text-lg text-md uppercase font-semibold'> Portfolio  </Link>
             </ListItemButton>
           </ListItem>
           <ListItem  disablePadding sx={{margin:"10px 0px"}}>
@@ -75,7 +75,7 @@ export default function Menu() {
                 <AlternateEmailIcon/>
               </ListItemIcon>
              
-              <Link to={"/contact"} className='text-lg uppercase font-semibold'> Contact  </Link>
+              <Link to={"/contact"} className='ld:text-lg text-md uppercase font-semibold'> Contact  </Link>
             </ListItemButton>
           </ListItem>
          
