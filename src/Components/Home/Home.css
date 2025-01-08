@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('./Fonts/Faster Stroker.otf') format('truetype'); /* Adjust path based on file location */
+    src: url('/Fonts/Faster Stroker.otf') format('truetype'); /* Adjust path based on file location */
     font-weight: normal;
     font-style: normal;
 }
