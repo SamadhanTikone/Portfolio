@@ -8,18 +8,29 @@
 
 }
 
-.content{
-    border: 5px solid black;
-    padding: 20px;
-    border-radius:8px ;
+.contentResume{
+    /* border: 5px solid black; */
+    padding: 30px 30px;
+   
+    /* border-radius:8px ; */
     margin-bottom: 10px;
+    /* border-left: 5px solid black ; */
+    border-style: dashed;
+    box-shadow: inset 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
+.hLine{
+    height: 2px;
+}
+
+.showInfo{
+    border-left: 2px solid #FF6500;
+}
 
 h1{
     font-size: 28px ;
     font-weight: 700;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     
 }
 .variable{
@@ -36,4 +47,12 @@ h1{
 .comment{
     margin-top: 10px;
     color: gray;
+}
+
+@media screen and (max-width:450px){
+    .contentResume{
+        color: red;
+        width: 100%;
+       
+    }
 }
