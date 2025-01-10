@@ -31,12 +31,18 @@ export default function Resume() {
   return (
     <div className={`md:px-24  pt-12 ${theme ? "bg-[#222831] text-white" : "bg-white text-black"}`}>
 
+<div>
+      <a href="./Resume/TikoneSamadhan_Resume.pdf" download>
+        <button className="px-4 py-2 bg-[#FF6500] rounded-lg">Download Resume</button>
+      </a>
+    </div>
+
       <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isPersonalClicked ? "justify-between" : "null"}`}>
 
-        <div className="flex showInfo">
+        <div className="flex showInfo py-4">
           <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
           <img src="./Resume/java-script.png" alt="file.js" className="w-8 h-8 mr-2" />
-          <h1 className={`cursor-pointer `} onClick={handleClick}>Personal.js</h1>
+          <h1 className={`cursor-pointer md:text-xl  lg:text-2xl text-lg`} onClick={handleClick}>Personal.js</h1>
 
         </div>
 
@@ -57,10 +63,10 @@ export default function Resume() {
 
       <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isEducationClicked ? "justify-between" : "null"}`}>
 
-        <div className="flex showInfo">
+        <div className="flex showInfo py-4">
           <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
           <img src="./Resume/java.png" alt="file.js" className="w-8 h-8 mr-2" />
-          <h1 className={`cursor-pointer `} onClick={handleEducation}>Education.java</h1>
+          <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg`} onClick={handleEducation}>Education.java</h1>
 
         </div>
 
@@ -90,10 +96,10 @@ export default function Resume() {
 
       <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isExpClicked ? "justify-between" : "null"}`}>
 
-        <div className="flex showInfo">
+        <div className="flex showInfo py-4">
           <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
           <img src="./Resume/letter-c.png" alt="file.js" className="w-8 h-8 mr-2" />
-          <h1 className={`cursor-pointer `} onClick={handleExp}>Experience.c</h1>
+          <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg`} onClick={handleExp}>Experience.c</h1>
 
         </div>
 
@@ -137,10 +143,10 @@ export default function Resume() {
 
       <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isSkillsClicked ? "justify-between" : "null"}`}>
 
-<div className="flex showInfo">
+<div className="flex showInfo py-4">
   <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
   <img src="./Resume/c-.png" alt="file.js" className="w-8 h-8 mr-2" />
-  <h1 className={`cursor-pointer `} onClick={handleSkills}>Skills.cpp</h1>
+  <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg`} onClick={handleSkills}>Skills.cpp</h1>
 
 </div>
 
@@ -162,10 +168,10 @@ export default function Resume() {
 
 <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isSkillsClicked ? "justify-between" : "null"}`}>
 
-<div className="flex showInfo">
+<div className="flex showInfo py-4">
   <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
   <img src="./Resume/sql.png" alt="file.js" className="w-8 h-8 mr-2" />
-  <h1 className={`cursor-pointer `} onClick={handleSkills}>Project.sql</h1>
+  <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg`} onClick={handleSkills}>Project.sql</h1>
 
 </div>
 
@@ -182,10 +188,10 @@ export default function Resume() {
 
 <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isSkillsClicked ? "justify-between" : "null"}`}>
 
-<div className="flex showInfo">
+<div className="flex showInfo py-4">
   <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
   <img src="./Resume/substance.png" alt="file.js" className="w-8 h-8 mr-2" />
-  <h1 className={`cursor-pointer `} onClick={handleSkills}>Summery.md</h1>
+  <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg`} onClick={handleSkills}>Summery.md</h1>
 
 </div>
 
@@ -209,10 +215,10 @@ export default function Resume() {
 
 <div className={`flex w-full md:px-12 px-4 main  md:flex-row flex-col ${isSkillsClicked ? "justify-between" : "null"}`}>
 
-<div className="flex showInfo">
+<div className="flex showInfo py-4">
   <span className="w-4 hLine bg-[#FF6500] text-center mt-3"></span>
   <img src="./Resume/certificate.png" alt="file.js" className="w-8 h-8 mr-2" />
-  <h1 className={`cursor-pointer `} onClick={handleSkills}>Certificate</h1>
+  <h1 className={`cursor-pointer md:text-xl lg:text-2xl text-lg `} onClick={handleSkills}>Certificate</h1>
 
 </div>
 

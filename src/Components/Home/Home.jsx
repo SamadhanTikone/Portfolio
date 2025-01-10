@@ -2,6 +2,7 @@ import { useContext } from "react"
 import { Theme } from "../Context/Context"
 import Button from '@mui/material/Button';
 import Connect from "./Connect"
+// import Sliders from "../Sliders/Sliders"
 
 import  "./Home.css"
 import { useGSAP } from "@gsap/react"
@@ -78,7 +79,7 @@ export default function Home() {
               
         </div>
    
-
+{/* <Sliders/> */}
        
     </div>
     </>
