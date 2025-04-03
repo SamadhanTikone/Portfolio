@@ -72,9 +72,15 @@ function toggleClose (){
 
 
   return (
-    <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex justify-around p-6 nav relative `}>
-      <p className="md:hidden block"> <Menu /> </p>
-      <ul className={` ${  menuIsOpen   ? `  hidden  ${ theme ? "bg-white text-black opacity-100": " bg-[#222831] text-white" } ` :"hidden " }  flex md:flex md:justify-around  md:flex-row items-center  md:w-[50%]  uppercase font-semibold `}>
+    <div className={` ${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} flex md:justify-around justify-between p-6 nav relative `}>
+     
+
+<div className="flex justify-center flex-col items-center cursor-pointer" onClick={()=> navigate("/")}>
+<img src="./logo.png" alt="" className="md:w-24 w-16" />
+
+</div>
+
+      <ul className={` ${  menuIsOpen   ? `  hidden  ${ theme ? "bg-white text-black opacity-100": " bg-[#222831] text-white" } ` :"hidden " }  flex md:flex md:justify-around  md:flex-row items-center  gap-10  uppercase font-semibold `}>
         <NavLink to={"/"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Home</NavLink>
         <NavLink to={"/about"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " :"null"}>About</NavLink>
         <NavLink to={"/resume"} onClick={toggleClose} className={({isActive})=> isActive ? "text-[#FF6500]  " : "null"}>Resume</NavLink>
@@ -84,19 +90,32 @@ function toggleClose (){
 
        
       </ul>
+
+    
       {/* <div className=" sm:hidden" onClick={toggleMenu}>
            { menuIsOpen ?  <CloseIcon sx={{fontSize:"28px"}}/> : <MenuIcon sx={{fontSize:"28px"}}/> }
         </div> */}
 
-<div className="flex justify-between md:w-[30%] lg:w-[15%]  sm:w-[40%]  w-auto">
-<Button variant="outlined" sx={{color:"#FF6500", borderColor:"#FF6500"}} onClick={handleConnect}> Let&apos;s Connect</Button>
+<div className="flex md:justify-between justify-end items-center md:gap-4 w-auto">
+
+<div className="md:block hidden">
+<Button variant="outlined" sx={{color:"#FF6500", borderColor:"#FF6500",height:"45px"}}  onClick={handleConnect}> Let&apos;s Connect</Button>
+
+</div>
+
+<div className="md:border rounded-lg border-[#FF6500]">
+
 <Button 
+
             variant="outlined"
-            sx={{color:"#FF6500", borderColor:"#FF6500"}} 
+            sx={{color:"#FF6500", border:"none",height:"45px"}} 
             onClick={toggleTheme}
             
             > { theme ? <DarkModeIcon/> : <LightModeIcon/> }</Button>
 
+</div>
+
+ <div className="md:hidden block"> <Menu /> </div>
 </div>
 
 

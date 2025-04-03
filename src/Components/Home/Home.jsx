@@ -3,6 +3,7 @@ import { Theme } from "../Context/Context"
 import Button from '@mui/material/Button';
 import Connect from "./Connect"
 // import Sliders from "../Sliders/Sliders"
+// import BackGround from "../BackGround/BackGround"
 
 import  "./Home.css"
 import { useGSAP } from "@gsap/react"
@@ -50,7 +51,9 @@ export default function Home() {
   const{theme} = useContext(Theme)
   return (
     <>
-    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} h-full ` }>
+    {/* <BackGround/> */}
+    {/* <Particles/> */}
+    <div className={`${ theme ? "bg-[#222831] text-white" : " bg-white text-[#222831]"} h-full z-10` }>
 
         <div className="grid sm:grid-cols-2 items-center grid-cols-1">
 

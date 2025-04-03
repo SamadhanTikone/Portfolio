@@ -18,22 +18,33 @@
 }
 
 .image-1{
-    animation: float 1s ease-in-out 1s infinite ;
+    animation: float 1s ease-in-out 2s infinite ;
 }
 
 @keyframes float {
     0% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
+    50% { transform: translateY(-10px); }
     100% { transform: translateY(0); }
   }
 
   .button {
-    transition: all 0.5s linear;
-    transform: translateY(-10px);
-    padding: 0px;
-    margin: 0px;
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+
+    /* Smooth transition */
+    transition: transform 2s cubic-bezier(0.25, 1, 0.5, 1);
+    transform-origin: center;
 }
 
 .button:hover {
-    transform: translateY(-15px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }

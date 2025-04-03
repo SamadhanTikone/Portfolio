@@ -49,28 +49,43 @@ export default function Portfolio() {
           <h2 className="lg:col-span-2 col-span-1 text-3xl font-semibold my-12 text-center mb-8">🚀 Explore My Tech Journey <ArrowDownwardIcon sx={{fontWeight:700 , font:"40px"}}/> </h2>
 
           <Project 
+                  url={"./Screenshot 2025-04-03 144717.png"}
+                  title={"Company Demo Website"}
+                  imageURL={"https://emacron-solutions.vercel.app/"}
+                  discription={" Developed a responsive hotel and food ordering website using React Router for seamless navigation, React Hooks for state management, and styled with Tailwind CSS and MUI components for a modern and intuitive user experience. "}
+                  tech={" React.js, Tailwind, Responsive, MUI, Router, Context, Hooks, API"}
+                />
+          <Project 
                   url={"./hotel blue.png"}
                   title={" Hotel Kings Garden"}
-                  discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                  imageURL={"https://hotel-kings.vercel.app/"}
+                  discription={" Developed a responsive hotel and food ordering website using React Router for seamless navigation, React Hooks for state management, and styled with Tailwind CSS and MUI components for a modern and intuitive user experience. "}
+                  tech={" React.js, Tailwind, Responsive, MUI, Router, Context, Hooks, API"}
                 />
 
           <Project 
                   url={"./landing page.png"}
                   title={" Shoes Landing Page"}
+                  imageURL={"https://landingpage-ten-woad.vercel.app/"}
                   discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                  tech={" React.js, Tailwind, Responsive, MUI, Router, Context, Hooks, API"}
                 />
 
 
           <Project
           url={"./company name.png"}
           title={"Company Website (Demo)"}
+          imageURL={"https://blogs-app-beryl.vercel.app/"}
           discription={"Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more."}
+          tech={" React.js, Tailwind, Responsive, MUI, Router, Context, Hooks, API"}
           />
 
           <Project 
                   url={"./Tailwind.png"}
                   title={"Tailwind Project (Responsive)"}
+                  imageURL={"https://tailwind-project-pru1.vercel.app/"}
                   discription={" Explore a curated collection of projects showcasing my technical expertise, problem-solving skills, and creativity. These projects highlight my experience in building scalable web applications, user-friendly interfaces, and efficient back-end systems. Each project is a reflection of my commitment to delivering high-quality solutions while leveraging modern   technologies like React, Java, Spring Boot, and more. "}
+                  tech={" React.js, Tailwind, Responsive, MUI, Router, Context, Hooks, API"}
                 />
         </div>
 
