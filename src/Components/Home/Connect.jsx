@@ -24,7 +24,7 @@ export default function Connect() {
       <Button variant="outlined" sx={{ borderColor: "#FF6500", color: "#FF6500" }} className='button'> <LinkedInIcon sx={{ fontSize: 28 }} /> </Button></Link>
 
       <Link to={"https://twitter.com/tikone_samadhan?t=WnpPBpN-czARHwEpCf949g&s=08"}>
-      <Button variant="outlined" sx={{ borderColor: "#FF6500", color: "#FF6500" }} className='button'> <XIcon sx={{ fontSize: 24 }} /> </Button></Link>
+      <Button variant="outlined" sx={{ borderColor: "#FF6500", color: "#FF6500" }} className='button'> <XIcon sx={{ fontSize: 26 }} /> </Button></Link>
 
 
     </div>
