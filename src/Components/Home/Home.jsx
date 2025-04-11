@@ -36,6 +36,7 @@ export default function Home() {
 
     )
   })
+ 
   useGSAP(()=>{
 
     gsap.from(".p",{
@@ -71,14 +72,14 @@ export default function Home() {
                 </div>
 
                 <div className="flex justify-center items-center mt-10 image-1">
-  <div className="relative w-[450px] h-[450px] rounded-full flex items-center justify-center before:absolute before:inset-0 before:rounded-full before:animate-spin-slow before:border-[6px] before:border-transparent before:border-t-orange-500 before:border-r-orange-500 before:z-0">
+  <div className="relative md:w-[450px] w-[270px] h-[270px] md:h-[450px] rounded-full flex items-center justify-center before:absolute before:inset-0 before:rounded-full before:animate-spin-slow before:border-[6px] before:border-transparent before:border-t-orange-500 before:border-r-orange-500 before:z-0">
     
     {/* Static inner image */}
-    <div className="relative w-[420px]  h-[420px] rounded-full hover:overflow-visible overflow-hidden z-10 border-4  transition-all duration-500 hover:scale-105">
+    <div className="relative md:w-[420px] w-[260px] h-[260px]  md:h-[420px] rounded-full hover:overflow-visible overflow-hidden z-10 border-4  transition-all duration-500 hover:scale-105">
       <img
         src="./Resume/sam-modified.png"
         alt="Profile"
-        className="w-full h-full object-cover cursor-pointer transition-transform duration-700 hover:scale-110"
+        className="w-full h-full object-cover image-2 cursor-pointer transition-transform duration-700 hover:scale-110"
       />
     </div>
   </div>
