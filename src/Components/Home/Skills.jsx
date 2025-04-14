@@ -73,24 +73,26 @@ export default function Skills() {
       <div>
         <h2 className="text-2xl uppercase tracking-widest p-8">My Skills</h2>
 
-        <div className="flex  gap-4 flex-wrap">
-          {languages.map((lang, index) => {
-            return (
-              <div
-                key={index}
-                className="border-2 relative  hover:bg-[#FF6500] w-[250px] h-[150px] flex flex-col rounded-lg hover:border-[#FF6500] transition-colors duration-300 cursor-pointer justify-center items-center"
-              >
-                <img
-                  src={images[index]}
-                  alt=""
-                  className="w-24 bg-white p-4 rounded-[50%] hover:shadow-2xl "
-                />
-                <p className="tracking-widest xl absolute bottom-0 uppercase">
-                  {lang}
-                </p>
-              </div>
-            );
-          })}
+        <div className="flex  gap-4 flex-wrap justify-center items-center">          {languages.map((lang, index) => {
+          return (
+            <div
+              key={index}
+              className="border-2 relative  hover:bg-[#FF6500] md:w-[250px] md:h-[150px] w-[150px] h-[100px] flex flex-col rounded-lg hover:border-[#FF6500] transition-colors duration-300 cursor-pointer justify-center items-center"
+            >
+              <img
+                src={images[index]}
+                alt=""
+                className="md:w-24 w-12 bg-white md:p-4 p-2 rounded-[50%] hover:shadow-2xl "
+              />
+              <p className="tracking-widest xl absolute bottom-0 uppercase">
+                {lang}
+                  
+
+                  
+              </p>
+            </div>
+          );
+        })}
         </div>
       </div>
     </div>
