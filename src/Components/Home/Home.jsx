@@ -63,7 +63,7 @@ export default function Home() {
 
                   <p className="md:text-[60px] font-bold sm:text-[42px] text-[32px] p uppercase  ">tikone</p>
                   <p className="md:text-[82px] sm:text-[60px] text-[40px] p uppercase text-[#FF6500] sam font-semibold block sm:-mt-10 -mt-5">samadhan</p>
-                  <p className="md:tracking-[15px] tracking-[6px] ml-2 sm:text-[16px] text-[10px] p uppercase font-semibold sm:-mt-4" >Front-End Developer</p>
+                  <p className="md:tracking-[15px] tracking-[6px] ml-2 sm:text-[16px] text-[10px] p uppercase font-semibold sm:-mt-4" >jr. Full Stack Developer</p>
                   <div className="p">
                   <Button variant="outlined" sx={{margin:"8px 8px ",color:"#FF6500", borderColor:"#FF6500"}} onClick={handleResume} >Resume </Button>
                   <Button variant="outlined" sx={{margin:"8px 8px",color:"#FF6500", borderColor:"#FF6500"}} onClick={handlePortfolio} >Portfolio </Button>
@@ -75,11 +75,11 @@ export default function Home() {
   <div className="relative md:w-[450px] w-[270px] h-[270px] md:h-[450px] rounded-full flex items-center justify-center before:absolute before:inset-0 before:rounded-full before:animate-spin-slow before:border-[6px] before:border-transparent before:border-t-orange-500 before:border-r-orange-500 before:z-0">
     
     {/* Static inner image */}
-    <div className="relative md:w-[420px] w-[260px] h-[260px]  md:h-[420px] rounded-full hover:overflow-visible overflow-hidden z-10 border-4  transition-all duration-500 hover:scale-105">
+    <div className="relative md:w-[420px] w-[260px] h-[260px]  md:h-[420px] rounded-full hover:bg-black  hover:overflow-visible overflow-hidden z-10 border-4  transition-all duration-500 hover:scale-105">
       <img
         src="./Resume/sam-modified.png"
         alt="Profile"
-        className="w-full h-full object-cover image-2 cursor-pointer transition-transform duration-700 hover:scale-110"
+        className="w-full h-full object-cover image-2  cursor-pointer transition-transform duration-700 hover:scale-110"
       />
     </div>
   </div>
