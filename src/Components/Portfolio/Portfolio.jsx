@@ -49,7 +49,7 @@ export default function Portfolio() {
           <h2 className="lg:col-span-2 col-span-1 text-3xl font-semibold my-12 text-center mb-8">🚀 Explore My Tech Journey <ArrowDownwardIcon sx={{fontWeight:700 , font:"40px"}}/> </h2>
 
           <Project 
-                  url={"./console.png"}
+                  url={"./Resume/console.png"}
                   title={"TO-DO Console Application"}
                   imageURL={"https://github.com/SamadhanTikone/ToDoApp"}
                   discription={" A lightweight and interactive console-based to-do list application built using Java and core Collection Framework (like ArrayList, HashMap). Users can add, delete, update, and view tasks efficiently through the terminal. Designed to practice core Java concepts such as loops, conditional logic, object-oriented design, and collection handling. Clean console UI for better user experience with proper input prompts and validations."}
